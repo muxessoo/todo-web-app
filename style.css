@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1a1a2e;
+}
+
+.container {
+    width: 90%;
+    max-width: 450px;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.input-box input:focus {
+    border-color: #5b5ea6;
+}
+
+.input-box button {
+    padding: 12px 22px;
+    background: #5b5ea6;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.input-box button:hover {
+    background: #4a4d8f;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #5b5ea6;
+}
+
+li span {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+li.checked span {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+li button {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+li button:hover {
+    color: #c0392b;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .input-box input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .input-box button {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    li span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .container {
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .input-box {
+        gap: 6px;
+    }
+
+    .input-box input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .input-box button {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}
